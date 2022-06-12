@@ -1,0 +1,29 @@
+Project Feedback
+
+Status: Resubmit
+
+----------------------------------------------
+Comments
+..............................................
+
+Method:
+- You are using a fully connected layer follwed by a convolutional layer (pixelClassification), which doesn't make your network a fully convolutional network since you are still using a fully connected layer... You are supposed to replace this fully connected by a fully conv layer. You are also not setting the Normalization to None on the input layer as advised
+- You have a paragraph in the introduction about Multi-scale processing but then you don't implement anything about it. You are supposed to detect all digits in the image, and after checking your code it seems like you are detecting only one digits (the one with maximum connected area). This is not exactly what we expect, and it's not the multi-scale handling that you kinda describe in your introduction section as well. 
+-You'll have to resubmit because of the mistakes on the network architecture and incorrect/missing multi-scale handling.  
+
+Evaluation:
+-Training and results on the MNIST dataset is ok, even though the architecture is not what is expected.
+-Results on the evaluation images are insufficient due to all the mistaked about the method. Also resubmit your new results on these evaluation images after correcting it.
+
+Theoretical Part:
+-There was a ''high-correlation'' between your answers and the answers of other student (too high in my opinion, you are supposed to answer these questions on your own). Anyway, you didn't pass this part because you needed 2 out of 3 points here to do so. 
+-In question 1, I gave you 0.5 out of 1 point. Your answer is incomplete since you don't mention that when using a fully connected layer the size of the input is fixed, and with fully convolution networks that is not necessary anymore.
+-In question 2, I gave you 0.75 out of 1 point. Your answer is kinda correct but very vague, it's hard to understand if you actually understood what would be the dimensions of the convolutional filter.
+-In question 3, I gave you 0.25 out of 1 point. You are explaining what is SIFT, which is not what is asked. Furthermore, if you actually understood how to construct a scale-space, you would have done it properly in the project as well. 
+
+Advanced Part:
+-Not submitted
+
+Report:
+-Overall, the report is poor and not visually appealing. Most of the stuff is poorly explained and it was hard to understand what you did. 
+-Most of the text needs to be improved for the resubmission.

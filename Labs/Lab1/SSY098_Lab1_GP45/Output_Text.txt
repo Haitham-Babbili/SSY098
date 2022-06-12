@@ -1,0 +1,47 @@
+==================================================
+Result from Ex1.10 to Ex1.12
+==================================================
+Output Image classified number is'2
+Output Image classified index is'12
+The Accuracy for digit classification is 78%
+
+==================================================
+
+
+==================================================
+Result from Ex1.14 to Ex1.16
+==================================================
+
+itteration1
+    'goteborg'    'goteborg'
+
+itteration2
+    'kalmar'    'kalmar'
+
+itteration3
+    'uppsala'    'stockholm'
+
+itteration4
+    'kalmar'    'kalmar'
+
+itteration5
+    'uppsala'    'uppsala'
+
+itteration6
+    'uppsala'    'uppsala'
+
+itteration7
+    'goteborg'    'goteborg'
+
+itteration8
+    'lund'    'lund'
+
+itteration9
+    'lund'    'lund'
+
+itteration10
+    'stockholm'    'stockholm'
+
+90% of churches was classified correctly
+
+==================================================

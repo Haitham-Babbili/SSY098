@@ -1,0 +1,9 @@
+function probmap = sliding_window(img, w, w0)
+% Takes an image and filters it with an weigthed image w
+%The probability of being a cell at each pixel is then calculated
+
+filterdimg = imfilter(img, w, 'symmetric'); %Filters the image
+
+y = sum(filterdimg,3)+w0; %sums across 3 dimensions
+
+probmap = 1./(1+exp(-y)); %The sigmoid function

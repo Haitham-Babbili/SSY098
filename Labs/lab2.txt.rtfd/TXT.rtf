@@ -1,0 +1,18 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2512
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red34\green45\blue53;\red117\green117\blue117;}
+{\*\expandedcolortbl;;\cssrgb\c17647\c23137\c27059;\cssrgb\c53333\c53333\c53333;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19380\viewh13200\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs48 \cf2 \expnd0\expndtw0\kerning0
+The Linnear classifier part looks good now. The CNN part is lacking some things. Please update 2.14, 2.16, 2.17, 2.18, 2.19 and resubmit. I have listed what is missing from each of these exercises below. 2.14) You made two mistakes here. -At this stage you were supposed to still be using the model architecture presented in 2.11. -The question here is how many trainable parameters the network has. You are counting the layers (and you even count layers that don't contain trainable parameters). The trainable parameters are the weights and biases. If you run the command analyzeNetwork(net) in the command window then a GUI will open at give you a breakdown of the trainable parameters. Also Don't just state the number of trainable parameters. Explain how you get it. 2.16) You were not supposed to implement anything here. The point is to calculate the number of computations using the equation on page 61, while also taking into account that the red layer operates on a picture one sixteenth the size due to the two maxpooling layers. 2.17) You were not supposed to implement this, but to calculate the answer. Also maxpooling with filter of one pixel doesn't do anything. It will return the largest value from a set of a single number. 2.18,2.19) You were supposed to calculate the prediction and recall as well. See page 42 for the equations.
+\fs36 \
+\
+\
+\
+Hi, You need to correct a few things. Correct 2.14, 2.17, 2.18, 2.19 To help yourselves try writing out the equations in algebraic form before plugging in numbers. This makes it easier for you to spot your mistakes. 2.14) Your calculation of the number of parameters in the convolutional layer is a bit off. You are entirely missing the calculations for the fully connected layer. 2.16) the sizes of the input images to the blue and red layers are not 5x5 and 2x2. I think you mistook the filter sizes of the preceding layers as the input image sizes, which is incorrect. All we know about the input image sizes is that each maxpooling layer reduces image sizes by a factor of 2 in each dimension so after two maxpooling layers we go from NxN pixels to (N/4)x(N/4)=NxN/16 pixels. Use the equations from the book and write them out before plugging in numbers. 2.17)Max pooling over a single pixel doesn't do anything (unless you pool across channels which is not the case here) so why would you want to do that? The following statement was confusing to me: "The total number of calculations is 25*90Npix + 9*30Npix = 2520Npix " I can not see where these numbers come from or how they relate to the layer substitution. Write out the equation you use before plugging in values. So to solve this exercise do the following: - Calculate the number of compoutations needed for the orignal case - Then calculate the number of calculations needed for the two 3x3 layers. - Then Compare these two numbers and consider other effects of the switch. 2.18 and 2.19) You need to include precision and recall in the report. I gave you the exact page number for the equations in my last comments.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 Rasmus Kj\'e6r H\'f8ier, 29 Mar at 15:49}

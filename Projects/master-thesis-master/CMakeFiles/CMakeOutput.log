@@ -1,0 +1,167 @@
+The system is: Linux - 4.13.0-41-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/3.5.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a055c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a055c.dir/build.make CMakeFiles/cmTC_a055c.dir/build
+make[1]: Entering directory '/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a055c.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_a055c.dir/CheckIncludeFile.c.o   -c "/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_a055c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a055c.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_a055c.dir/CheckIncludeFile.c.o  -o cmTC_a055c -rdynamic 
+make[1]: Leaving directory '/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_578a2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_578a2.dir/build.make CMakeFiles/cmTC_578a2.dir/build
+make[1]: Entering directory '/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_578a2.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_578a2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_578a2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_578a2.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_578a2.dir/CheckFunctionExists.c.o  -o cmTC_578a2 -rdynamic -lpthread 
+make[1]: Leaving directory '/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test GFLAGS_IN_GOOGLE_NAMESPACE succeeded with the following output:
+Change Dir: /media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e9aa9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e9aa9.dir/build.make CMakeFiles/cmTC_e9aa9.dir/build
+make[1]: Entering directory '/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e9aa9.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -DGFLAGS_IN_GOOGLE_NAMESPACE   -o CMakeFiles/cmTC_e9aa9.dir/src.cxx.o -c "/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp/src.cxx"
+Linking CXX executable cmTC_e9aa9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9aa9.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -DGFLAGS_IN_GOOGLE_NAMESPACE    CMakeFiles/cmTC_e9aa9.dir/src.cxx.o  -o cmTC_e9aa9 -rdynamic /usr/lib/x86_64-linux-gnu/libgflags.so -lpthread -Wl,-rpath,/usr/lib/x86_64-linux-gnu 
+make[1]: Leaving directory '/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp'
+
+Source file was:
+#include <gflags/gflags.h>
+     int main(int argc, char * argv[]) {
+       google::ParseCommandLineFlags(&argc, &argv, true);
+       return 0;
+     }
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeeded with the following output:
+Change Dir: /media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3c4e4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3c4e4.dir/build.make CMakeFiles/cmTC_3c4e4.dir/build
+make[1]: Entering directory '/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c4e4.dir/src.c.o
+/usr/bin/cc    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_3c4e4.dir/src.c.o   -c "/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp/src.c"
+Linking C executable cmTC_3c4e4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c4e4.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTC_3c4e4.dir/src.c.o  -o cmTC_3c4e4 -rdynamic 
+make[1]: Leaving directory '/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeeded with the following output:
+Change Dir: /media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b3f60/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b3f60.dir/build.make CMakeFiles/cmTC_b3f60.dir/build
+make[1]: Entering directory '/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b3f60.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_b3f60.dir/src.cxx.o -c "/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp/src.cxx"
+Linking CXX executable cmTC_b3f60
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3f60.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTC_b3f60.dir/src.cxx.o  -o cmTC_b3f60 -rdynamic 
+make[1]: Leaving directory '/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test COMPILER_HAS_SSE_FLAG succeeded with the following output:
+Change Dir: /media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b3c35/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b3c35.dir/build.make CMakeFiles/cmTC_b3c35.dir/build
+make[1]: Entering directory '/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b3c35.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -DCOMPILER_HAS_SSE_FLAG   -msse3 -o CMakeFiles/cmTC_b3c35.dir/src.cxx.o -c "/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp/src.cxx"
+Linking CXX executable cmTC_b3c35
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3c35.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -DCOMPILER_HAS_SSE_FLAG    CMakeFiles/cmTC_b3c35.dir/src.cxx.o  -o cmTC_b3c35 -rdynamic 
+make[1]: Leaving directory '/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_AVX_FLAG succeeded with the following output:
+Change Dir: /media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_46dfc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_46dfc.dir/build.make CMakeFiles/cmTC_46dfc.dir/build
+make[1]: Entering directory '/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_46dfc.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -DCOMPILER_HAS_AVX_FLAG   -mavx -o CMakeFiles/cmTC_46dfc.dir/src.cxx.o -c "/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp/src.cxx"
+Linking CXX executable cmTC_46dfc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46dfc.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -DCOMPILER_HAS_AVX_FLAG    CMakeFiles/cmTC_46dfc.dir/src.cxx.o  -o cmTC_46dfc -rdynamic 
+make[1]: Leaving directory '/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_AVX2_FLAG succeeded with the following output:
+Change Dir: /media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a805e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a805e.dir/build.make CMakeFiles/cmTC_a805e.dir/build
+make[1]: Entering directory '/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a805e.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -DCOMPILER_HAS_AVX2_FLAG   -mavx2 -o CMakeFiles/cmTC_a805e.dir/src.cxx.o -c "/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp/src.cxx"
+Linking CXX executable cmTC_a805e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a805e.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -DCOMPILER_HAS_AVX2_FLAG    CMakeFiles/cmTC_a805e.dir/src.cxx.o  -o cmTC_a805e -rdynamic 
+make[1]: Leaving directory '/media/weiming/Ny volym/ubuntu-project/master-thesis/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }

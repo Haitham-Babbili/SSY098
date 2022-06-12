@@ -1,0 +1,33 @@
+ ---------------------------------------------
+       SSY-097 Image Analysis - Lab 1
+ ---------------------------------------------
+
+ -----------------------------------------------
+  Classification Result of Digit Validation Set
+ -----------------------------------------------
+ 
+ 50 digit images are contained in validation
+ set, 40 of them are classified successfully.
+
+ The classification accuracy is 80.00%.
+
+
+ -----------------------------------------------
+      Classification Result of Digit Image
+ -----------------------------------------------
+ 
+ In the image 'paper_with_digits.png', there
+ are 13 digits in it, 12 of them are classified 
+ correstly.
+
+ The classification accuracy is 92.31%.
+
+
+ -----------------------------------------------
+      Classification Result of Churce Images
+ -----------------------------------------------
+ 
+ 9 churches are recognized correctly, 10 images 
+ in total.
+
+ The classification ccuracy is 90.00%.
